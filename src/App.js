@@ -1,21 +1,20 @@
 import HelloWorld from "./components/HellWorld";
+import SayMyName from "./components/SayMyName";
+import Pessoa from "./components/Pessoa";
 
 function App() {
-  const name = "Matheus";
-
-  function sum(a, b) {
-    return a + b;
-  }
-
-  const url = "https://via.placeholder.com/150";
-
   return (
     <div className="App">
-      <p>Testando o JSX</p>
-      <p>Olá {name}</p>
-      <p>A soma é: {sum(1, 2)}</p>
-      <img src={url} alt="Minha Imagem" />
       <HelloWorld />
+      <SayMyName nome="Matheus" />
+      <SayMyName nome="João" />
+      <SayMyName nome="Francisco" />
+      <Pessoa
+        nome="Rodrigo"
+        idade="28"
+        profissao="Programador"
+        foto="https://via.placeholder.com/150"
+      />
     </div>
   );
 }
