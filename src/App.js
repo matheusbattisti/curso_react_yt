@@ -1,3 +1,5 @@
+import HelloWorld from "./components/HellWorld";
+
 function App() {
   const name = "Matheus";
 
@@ -13,6 +15,7 @@ function App() {
       <p>Olá {name}</p>
       <p>A soma é: {sum(1, 2)}</p>
       <img src={url} alt="Minha Imagem" />
+      <HelloWorld />
     </div>
   );
 }
