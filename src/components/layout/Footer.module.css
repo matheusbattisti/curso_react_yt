@@ -1,0 +1,14 @@
+.social_list {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+}
+
+.social_list li {
+  margin: 0 1em;
+}
+
+.social_list svg {
+  font-size: 1.5em;
+  cursor: pointer;
+}
