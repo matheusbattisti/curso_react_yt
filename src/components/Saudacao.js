@@ -3,7 +3,7 @@ function Saudacao({ nome }) {
     return `Olá, ${algumNome}, como vai?`
   }
 
-  return <p>{gerarSaudacao(nome)}</p>
+  return <>{nome && <p>{gerarSaudacao(nome)}</p>}</>
 }
 
 export default Saudacao

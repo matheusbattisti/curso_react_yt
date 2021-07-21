@@ -1,4 +1,4 @@
-import { useState } from 'React'
+import { useState } from 'react'
 import Saudacao from './components/Saudacao'
 import SeuNome from './components/SeuNome'
 
