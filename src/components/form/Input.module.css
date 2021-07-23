@@ -1,0 +1,13 @@
+.form_control {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1em;
+}
+
+.form_control label {
+  margin-bottom: 0.5em;
+}
+
+.form_control input {
+  padding: 0.5em;
+}

@@ -1,4 +1,4 @@
-function Card({ name, budget }) {
+function Project({ name, budget }) {
   return (
     <div>
       <h4>{name}</h4>
@@ -7,4 +7,4 @@ function Card({ name, budget }) {
   )
 }
 
-export default Card
+export default Project
