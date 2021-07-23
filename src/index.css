@@ -1,13 +1,13 @@
-body {
-  padding: 50px;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+
+html,
+body,
+#root {
   background-color: #efefef;
-}
-
-h1 {
-  color: #333;
-}
-
-p {
-  background-color: #999;
-  padding: 10px;
+  height: 100%;
 }

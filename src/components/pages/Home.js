@@ -1,8 +1,11 @@
+import { Link } from 'react-router-dom'
+
 function Home() {
   return (
     <div>
-      <h1>Home</h1>
-      <p>Conteúdo da página</p>
+      <h1>Bem-vindo ao Costs</h1>
+      <p>Comece a gerenciar os seus projetos agora mesmo!</p>
+      <Link to="/newproject">Criar Projeto</Link>
     </div>
   )
 }
