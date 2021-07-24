@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import Input from '../form/Input'
+import SubmitButton from '../form/SubmitButton'
 
 import styles from './ProjectForm.module.css'
 
@@ -31,9 +32,7 @@ function ProjectForm(props) {
         placeholder="Insira o orçamento total"
         handleOnChange={handleChange}
       />
-      <div>
-        <button>Criar projeto</button>
-      </div>
+      <SubmitButton text="Criar projeto" />
     </form>
   )
 }
