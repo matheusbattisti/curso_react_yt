@@ -27,12 +27,16 @@ function Projects() {
   }, []);
 
   return (
-    <div class={styles.project_container}>
+    <div className={styles.project_container}>
       <h1>Meus Projetos</h1>
       <Container>
         {projects.length > 0 ? (
           projects.map((project) => (
-            <ProjectCard name={project.name} budget={project.budget} />
+            <ProjectCard
+              name={project.name}
+              budget={project.budget}
+              key={project.id}
+            />
           ))
         ) : (
           <Loading />

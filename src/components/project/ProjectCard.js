@@ -3,7 +3,7 @@ import styles from "./ProjectCard.module.css";
 
 import { BsPencil, BsFillTrashFill } from "react-icons/bs";
 
-function Project({ name, budget }) {
+function Project({ id, name, budget }) {
   return (
     <div className={styles.project_card}>
       <h4>{name}</h4>
@@ -11,7 +11,7 @@ function Project({ name, budget }) {
         <span>Orçamento:</span> R${budget}
       </p>
       <div className={styles.project_card_actions}>
-        <Link>
+        <Link to="/">
           <BsPencil /> Editar
         </Link>
         <button>
