@@ -1,10 +1,12 @@
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
-import Footer from './components/layout/Footer'
-import Navbar from './components/layout/Navbar'
-import Container from './components/layout/Container'
-import Home from './components/pages/Home'
-import Projects from './components/pages/Projects'
-import NewProject from './components/pages/NewProject'
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Footer from "./components/layout/Footer";
+import Navbar from "./components/layout/Navbar";
+import Container from "./components/layout/Container";
+import Home from "./components/pages/Home";
+import Projects from "./components/pages/Projects";
+import NewProject from "./components/pages/NewProject";
+import Company from "./components/pages/Company";
+import Contact from "./components/pages/Contact";
 
 function App() {
   return (
@@ -18,6 +20,12 @@ function App() {
           <Route path="/projects">
             <Projects />
           </Route>
+          <Route path="/company">
+            <Company />
+          </Route>
+          <Route path="/contact">
+            <Contact />
+          </Route>
           <Route path="/newproject">
             <NewProject />
           </Route>
@@ -25,7 +33,7 @@ function App() {
       </Switch>
       <Footer />
     </Router>
-  )
+  );
 }
 
-export default App
+export default App;

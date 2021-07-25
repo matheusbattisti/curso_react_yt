@@ -1,8 +1,8 @@
-import { Link } from 'react-router-dom'
-import Container from './Container'
+import { Link } from "react-router-dom";
+import Container from "./Container";
 
-import styles from './Navbar.module.css'
-import logo from '../../img/costs_logo.png'
+import styles from "./Navbar.module.css";
+import logo from "../../img/costs_logo.png";
 
 function Navbar() {
   return (
@@ -19,15 +19,15 @@ function Navbar() {
             <Link to="/projects">Projetos</Link>
           </li>
           <li className={styles.item}>
-            <Link to="/empresa">Empresa</Link>
+            <Link to="/company">Empresa</Link>
           </li>
           <li className={styles.item}>
-            <Link to="/contato">Contato</Link>
+            <Link to="/contact">Contato</Link>
           </li>
         </ul>
       </Container>
     </div>
-  )
+  );
 }
 
-export default Navbar
+export default Navbar;

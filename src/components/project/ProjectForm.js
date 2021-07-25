@@ -1,19 +1,35 @@
-import { useState } from 'react'
-import Input from '../form/Input'
-import SubmitButton from '../form/SubmitButton'
+import { useState, useEffect } from "react";
+import Input from "../form/Input";
+import Select from "../form/Select";
+import SubmitButton from "../form/SubmitButton";
 
-import styles from './ProjectForm.module.css'
+import styles from "./ProjectForm.module.css";
 
 function ProjectForm(props) {
-  const [project, setProject] = useState({})
+  const [project, setProject] = useState({});
+  const [categories, setCategories] = useState([]);
+
+  useEffect(() => {
+    fetch("http://localhost:5000/categories", {
+      method: "GET",
+      headers: {
+        "Content-Type": "application/json",
+      },
+    })
+      .then((resp) => resp.json())
+      .then((data) => {
+        setCategories(data);
+      });
+  }, []);
 
   const submit = (e) => {
-    e.preventDefault()
-    props.handleSubmit(project)
-  }
+    e.preventDefault();
+    props.handleSubmit(project);
+  };
 
   function handleChange(e) {
-    setProject({ ...project, [e.target.name]: e.target.value })
+    console.log(e.target.name);
+    setProject({ ...project, [e.target.name]: e.target.value });
   }
 
   return (
@@ -32,9 +48,15 @@ function ProjectForm(props) {
         placeholder="Insira o orçamento total"
         handleOnChange={handleChange}
       />
+      <Select
+        name="category_id"
+        text="Selecione a categoria"
+        options={categories}
+        handleOnChange={handleChange}
+      />
       <SubmitButton text="Criar projeto" />
     </form>
-  )
+  );
 }
 
-export default ProjectForm
+export default ProjectForm;
