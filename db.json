@@ -1,48 +1,22 @@
 {
   "projects": [
     {
-      "name": "teste",
+      "name": "adsasd",
       "budget": "123",
-      "id": 1
+      "category": {
+        "id": "1",
+        "name": "Infra"
+      },
+      "id": 13
     },
     {
-      "name": "asd",
-      "id": 2
-    },
-    {
-      "name": "ygguy",
-      "id": 3
-    },
-    {
-      "name": "teste",
-      "budget": "123123",
-      "id": 4
-    },
-    {
-      "name": "asd",
-      "budget": "123",
-      "id": 5
-    },
-    {
-      "name": "teste",
-      "budget": "123",
-      "id": 6
-    },
-    {
-      "name": "asd",
-      "budget": "12",
-      "id": 7
-    },
-    {
-      "name": "asd",
-      "budget": "12",
-      "id": 8
-    },
-    {
-      "name": "122",
-      "budget": "12",
-      "category_id": "1",
-      "id": 9
+      "name": "Teste",
+      "budget": "1000",
+      "category": {
+        "id": "2",
+        "name": "Desenvolvimento"
+      },
+      "id": 14
     }
   ],
   "categories": [

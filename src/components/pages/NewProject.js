@@ -1,4 +1,4 @@
-import { useHistory } from 'react-router-dom'
+import { useHistory, useEffect } from 'react-router-dom'
 
 import ProjectForm from '../project/ProjectForm'
 
@@ -17,8 +17,7 @@ function NewProject() {
     })
       .then((resp) => resp.json())
       .then((data) => {
-        console.log(data)
-        history.push('/projects')
+        history.push('/projects', { message: 'Projeto criado com sucesso!' })
       })
   }
 

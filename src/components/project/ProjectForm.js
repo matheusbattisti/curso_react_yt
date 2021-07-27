@@ -1,35 +1,47 @@
-import { useState, useEffect } from "react";
-import Input from "../form/Input";
-import Select from "../form/Select";
-import SubmitButton from "../form/SubmitButton";
+import { useState, useEffect } from 'react'
+import Input from '../form/Input'
+import Select from '../form/Select'
+import SubmitButton from '../form/SubmitButton'
 
-import styles from "./ProjectForm.module.css";
+import styles from './ProjectForm.module.css'
 
 function ProjectForm(props) {
-  const [project, setProject] = useState({});
-  const [categories, setCategories] = useState([]);
+  const [project, setProject] = useState({})
+  const [categories, setCategories] = useState([])
 
   useEffect(() => {
-    fetch("http://localhost:5000/categories", {
-      method: "GET",
+    fetch('http://localhost:5000/categories', {
+      method: 'GET',
       headers: {
-        "Content-Type": "application/json",
+        'Content-Type': 'application/json',
       },
     })
       .then((resp) => resp.json())
       .then((data) => {
-        setCategories(data);
-      });
-  }, []);
+        setCategories(data)
+      })
+  }, [])
 
   const submit = (e) => {
-    e.preventDefault();
-    props.handleSubmit(project);
-  };
+    e.preventDefault()
+    props.handleSubmit(project)
+  }
 
   function handleChange(e) {
-    console.log(e.target.name);
-    setProject({ ...project, [e.target.name]: e.target.value });
+    setProject({ ...project, [e.target.name]: e.target.value })
+  }
+
+  function handleCategory(e) {
+    console.log(e)
+    console.log(e.target)
+
+    setProject({
+      ...project,
+      category: {
+        id: e.target.value,
+        name: e.target.options[e.target.selectedIndex].text,
+      },
+    })
   }
 
   return (
@@ -52,11 +64,11 @@ function ProjectForm(props) {
         name="category_id"
         text="Selecione a categoria"
         options={categories}
-        handleOnChange={handleChange}
+        handleOnChange={handleCategory}
       />
       <SubmitButton text="Criar projeto" />
     </form>
-  );
+  )
 }
 
-export default ProjectForm;
+export default ProjectForm
