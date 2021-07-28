@@ -1,31 +1,58 @@
 {
   "projects": [
     {
-      "name": "Meu projeto",
-      "budget": "15000",
-      "category": {
-        "id": "2",
-        "name": "Desenvolvimento"
-      },
-      "id": 13
-    },
-    {
       "name": "Teste",
-      "budget": "1000",
+      "budget": "10000",
       "category": {
-        "id": "2",
-        "name": "Desenvolvimento"
+        "id": "3",
+        "name": "Design"
       },
-      "id": 14
-    },
-    {
-      "name": "qweqwe",
-      "budget": "1",
-      "category": {
-        "id": "1",
-        "name": "Infra"
-      },
-      "id": 15
+      "cost": 6232,
+      "services": [
+        {
+          "name": "teste",
+          "cost": "500",
+          "description": "asd"
+        },
+        {
+          "name": "x",
+          "cost": "123",
+          "description": "asd"
+        },
+        {
+          "name": "asd",
+          "cost": "12313213"
+        },
+        {
+          "name": "asd",
+          "cost": "1231",
+          "description": "asd"
+        },
+        {
+          "name": "asdsa",
+          "cost": "1231",
+          "description": "asd"
+        },
+        {
+          "name": "12123",
+          "cost": "12",
+          "description": "as"
+        },
+        {
+          "name": "adsd",
+          "cost": "3123",
+          "description": "as"
+        },
+        {
+          "name": "adasd",
+          "cost": "123123123132"
+        },
+        {
+          "name": "adasd",
+          "cost": "12"
+        }
+      ],
+      "id": 1
     }
   ],
   "categories": [

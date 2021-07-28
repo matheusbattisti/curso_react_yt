@@ -12,6 +12,7 @@ import styles from './Projects.module.css'
 
 function Projects() {
   const [projects, setProjects] = useState([])
+  const [removeLoading, setRemoveLoading] = useState(false)
   const [projectMessage, setProjectMessage] = useState('')
 
   const location = useLocation()
@@ -33,8 +34,9 @@ function Projects() {
           .then((resp) => resp.json())
           .then((data) => {
             setProjects(data)
+            setRemoveLoading(true)
           }),
-      0,
+      100,
     )
   }, [])
 
@@ -61,7 +63,7 @@ function Projects() {
       {message && <Message type="success" msg={message} />}
       {projectMessage && <Message type="success" msg={projectMessage} />}
       <Container customClass="start">
-        {projects.length > 0 ? (
+        {projects.length > 0 &&
           projects.map((project) => (
             <ProjectCard
               id={project.id}
@@ -71,9 +73,10 @@ function Projects() {
               key={project.id}
               handleRemove={removeProject}
             />
-          ))
-        ) : (
-          <Loading />
+          ))}
+        {!removeLoading && <Loading />}
+        {removeLoading && projects.length === 0 && (
+          <p>Não há projetos cadastrados!</p>
         )}
       </Container>
     </div>

@@ -5,16 +5,19 @@ import SubmitButton from '../form/SubmitButton'
 import styles from '../project/ProjectForm.module.css'
 
 function ServiceForm({ handleSubmit, btnText, projectData }) {
-  const [project, setProject] = useState(projectData)
+  const [service, setService] = useState({})
 
   const submit = (e) => {
     e.preventDefault()
-    handleSubmit(project)
+    projectData.services.push(service)
+    console.log(service)
+    console.log(projectData)
+    handleSubmit(projectData)
   }
 
   function handleChange(e) {
-    console.log(project)
-    setProject({ ...project, services: { [e.target.name]: e.target.value } })
+    console.log(service)
+    setService({ ...service, [e.target.name]: e.target.value })
   }
 
   return (
