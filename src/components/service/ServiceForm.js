@@ -2,18 +2,19 @@ import { useState } from 'react'
 import Input from '../form/Input'
 import SubmitButton from '../form/SubmitButton'
 
-import styles from './ProjectForm.module.css'
+import styles from '../project/ProjectForm.module.css'
 
-function ServiceForm(props) {
-  const [service, setService] = useState({})
+function ServiceForm({ handleSubmit, btnText, projectData }) {
+  const [project, setProject] = useState(projectData)
 
   const submit = (e) => {
     e.preventDefault()
-    props.handleSubmit(service)
+    handleSubmit(project)
   }
 
   function handleChange(e) {
-    setService({ ...service, [e.target.name]: e.target.value })
+    console.log(project)
+    setProject({ ...project, services: { [e.target.name]: e.target.value } })
   }
 
   return (
@@ -35,11 +36,11 @@ function ServiceForm(props) {
       <Input
         type="text"
         text="Descrição do projeto"
-        name="name"
+        name="description"
         placeholder="Descreva o serviço"
         handleOnChange={handleChange}
       />
-      <SubmitButton text="Criar serviço" />
+      <SubmitButton text={btnText} />
     </form>
   )
 }

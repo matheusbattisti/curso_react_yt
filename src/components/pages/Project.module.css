@@ -23,4 +23,26 @@
   border-bottom: 1px solid #7a7a7a;
   padding-bottom: 1.2em;
   margin-bottom: 1.2em;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.btn {
+  background-color: #222;
+  color: #fff;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  transition: 0.5s;
+  border: none;
+  cursor: pointer;
+  max-height: 40px;
+}
+
+.btn:hover {
+  color: #ffbb33;
+}
+
+.form {
+  width: 100%;
 }

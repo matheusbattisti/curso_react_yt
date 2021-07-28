@@ -1,11 +1,11 @@
 {
   "projects": [
     {
-      "name": "adsasd",
-      "budget": "123",
+      "name": "Meu projeto",
+      "budget": "15000",
       "category": {
-        "id": "1",
-        "name": "Infra"
+        "id": "2",
+        "name": "Desenvolvimento"
       },
       "id": 13
     },
@@ -17,6 +17,15 @@
         "name": "Desenvolvimento"
       },
       "id": 14
+    },
+    {
+      "name": "qweqwe",
+      "budget": "1",
+      "category": {
+        "id": "1",
+        "name": "Infra"
+      },
+      "id": 15
     }
   ],
   "categories": [
