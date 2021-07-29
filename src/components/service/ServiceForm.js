@@ -10,13 +10,10 @@ function ServiceForm({ handleSubmit, btnText, projectData }) {
   const submit = (e) => {
     e.preventDefault()
     projectData.services.push(service)
-    console.log(service)
-    console.log(projectData)
     handleSubmit(projectData)
   }
 
   function handleChange(e) {
-    console.log(service)
     setService({ ...service, [e.target.name]: e.target.value })
   }
 

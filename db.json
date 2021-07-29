@@ -1,58 +1,33 @@
 {
   "projects": [
     {
-      "name": "Teste",
+      "name": "Projeto de Infra",
       "budget": "10000",
       "category": {
-        "id": "3",
-        "name": "Design"
+        "id": "1",
+        "name": "Infra"
       },
-      "cost": 6232,
+      "cost": 5000,
       "services": [
         {
-          "name": "teste",
-          "cost": "500",
-          "description": "asd"
-        },
-        {
-          "name": "x",
-          "cost": "123",
-          "description": "asd"
-        },
-        {
-          "name": "asd",
-          "cost": "12313213"
-        },
-        {
-          "name": "asd",
-          "cost": "1231",
-          "description": "asd"
-        },
-        {
-          "name": "asdsa",
-          "cost": "1231",
-          "description": "asd"
-        },
-        {
-          "name": "12123",
-          "cost": "12",
-          "description": "as"
-        },
-        {
-          "name": "adsd",
-          "cost": "3123",
-          "description": "as"
-        },
-        {
-          "name": "adasd",
-          "cost": "123123123132"
-        },
-        {
-          "name": "adasd",
-          "cost": "12"
+          "name": "Contratar um DevOps",
+          "cost": "5000",
+          "description": "DevOps para criar projeto na AWS",
+          "id": "79475653-9d65-4eb0-921b-9b12b6c6be52"
         }
       ],
-      "id": 1
+      "id": 2
+    },
+    {
+      "name": "Desenvolvimento do novo site",
+      "budget": "3000",
+      "category": {
+        "id": "2",
+        "name": "Desenvolvimento"
+      },
+      "cost": 0,
+      "services": [],
+      "id": 3
     }
   ],
   "categories": [
