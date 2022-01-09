@@ -1,70 +1,48 @@
-# Getting Started with Create React App
+# Curso de React + Projeto Costs
+## Hora de Codar (Matheus Battisti)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Instalação de dependências
 
-## Available Scripts
+```bash
+npm install
+```
 
-In the project directory, you can run:
+### Lista de aulas - [Vídeos do curso](https://www.youtube.com/watch?v=FXqX7oof0I4&list=PLGH05S0K58Woi7XEr1h2uQbW5pA8De5ik)
 
-### `yarn start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `yarn test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Aula 01 - Introdução  
+Aula 02 - Instalando o React  
+Aula 03 - Entendendo o JSX  
+Aula 04 - Criando componentes no React  
+Aula 05 - Trabalhando com props  
+Aula 06 - Inserindo CSS no React  
+Aula 07 - Utilizando React fragments  
+Aula 08 - Avançando em props  
+Aula 09 - Eventos no React  
+Aula 10 - useState na prática  
+Aula 11 - Passar eventos por props  
+Aula 12 - Renderização condicional (if)  
+Aula 13 - Renderização de listas  
+Aula 14 - State Lift  
+Aula 15 - Implementando o React Router  
+Aula 16 - Icons  
+Aula 17 - Criando o projeto  
+Aula 18 - Estruturando o projeto  
+Aula 19 - Navbar e footer  
+Aula 20 - Criando a home  
+Aula 21 - Página para o formulário de projeto  
+Aula 22 - Componentização de formulário  
+Aula 23 - Conectando com API pelo React  
+Aula 24 - Inserindo dados no banco via API  
+Aula 25 - Mensagens do sistema  
+Aula 26 - Criando Dashboard  
+Aula 27 - Resgatando projetos do banco de dados  
+Aula 28 - Criando componente de loader  
+Aula 29 - Removendo projetos  
+Aula 30 - Página de edição de dados  
+Aula 31 - Exibindo detalhes do projeto  
+Aula 32 - Atualização do projeto  
+Aula 33 - Criando área de serviços  
+Aula 34 - Adicionando novos serviços  
+Aula 35 - Exibindo os serviços  
+Aula 36 - Removendo serviços  
+Aula 37 - Ajustando o projeto para o React Router 6  
