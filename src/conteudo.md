@@ -1,7 +1,6 @@
-    PROPS
-A props são valores passados para componentes;
-Podemos deixá-los dinâmicos;
-Ou seja, mudando a execução por causa do valor da prop;
-O valor é passado como um atributo na chamada do componente;
-E precisa ser resgatado dentro de uma propriedade/argumento chamda props na função de definição do componente;
-As props são somente de leitura!
+    ADICIONANDO CSS
+O CSS pode ser adicionado de forma global na aplicação, por meio do arquivo index.css por exemplo;
+Porém é possível estilizar a nível de componentes;
+Utilizamos o CSS modules para isso;
+Basta criar um arquivo como: Componente.modules.css;
+E chamar este CSS no componente;
